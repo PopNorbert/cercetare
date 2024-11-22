@@ -42,8 +42,8 @@ def generate_large_prime(bits):
 
 
 bases = [2, 3, 7, 13, 17]
-exponents = [2**16, 2**64, 2**512, 2**1024]  
-modulus_sizes = [16,32]  
+exponents = [2**16, 2**64, 2**256]
+modulus_sizes = [32,64]
 
 
 small_primes = {size: generate_large_prime(size) for size in modulus_sizes}
